@@ -197,3 +197,6 @@ http://localhost:3000/static/hello.html`
 
     1. 安装所需功能的node模块 `npm install xxx`
     2. `app.use`
+# 错误处理
+
+- 错误处理中间件一般放在其他app.use和路由调用的后面，从而使那些到了错误处理中间件的已经经过了别的事件。
